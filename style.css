@@ -173,6 +173,7 @@ a {
 
 .galitem {
 	background-color:#4e5d76;
+	display:inline-block;
 }
 
 .gallink {
