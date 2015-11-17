@@ -10,11 +10,12 @@
 	background-color:white;
 	font-size:1rem;
 	display:block;
+	
 	/*
 	color: red;
-	
-	clear:both;
 	border: solid 1px black;
+	clear:both;
+	
 	
 	
 	*/
@@ -45,7 +46,7 @@ body{
 	
 body>div {
 	width: 98%;
-	
+	max-width:550px;
 }
 	
 div{
@@ -64,6 +65,7 @@ h1 {
 
 p{
 	font-size:1rem;
+	color: white;
 	
 }
 
@@ -94,12 +96,15 @@ a {
 
 .menu {
 	background-color:#1c1d21;
-	width:100%;
+	min-width:100%;
 	display:inline-block;
+	margin-left:0rem;
+	margin-right:0rem;
 }
 
 .menulist{
 	background-color:#1c1d21;
+	
 }
 
 .menuitem {
@@ -128,6 +133,8 @@ a {
 	background-color:#1c1d21;
 	margin: 1rem auto 1rem auto;
 	display:inline-block;
+	clear:left;
+	
 	
 }
 
@@ -166,29 +173,55 @@ a {
 	
 	
 }
+#galintro{
+	text-align:center;
+}
 
 #gallery {
-	background-color:#4e5d76;
-}
-
-.galitem {
-	background-color:#4e5d76;
-	display:inline-block;
-}
-
-.gallink {
 	background-color:#4e5d76;
 	
 }
 
+#galul{
+	width:100%;
+	margin:0rem;
+	padding:0rem;
+	background-color:#ea9bca;
+	
+}
+
+.galitem {
+	background-color:#1c1d21;
+	display:inline-block;
+	width: 100%;
+	margin:1rem 0rem 1rem 0rem;
+	padding:0rem;
+}
+
+.gallink {
+	background-color:#4e5d76;
+	padding: 0.35rem;
+	margin: 0rem;
+	border: solid 0.35rem #1c1d21;
+}
+	
+
 .galimage {
 	background-color:#4e5d76;
+	width:100%;
+	border: solid 1px black;
+	
+	
 	
 }
 
 .galcaption {
 	background-color:#4e5d76;
-	
+	margin: 0.35rem 0rem 0rem 0rem;
+}
+
+#context{
+	text-align:center;
 }
 
 .contactlist{
