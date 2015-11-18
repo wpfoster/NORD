@@ -27,7 +27,7 @@ $(".gallink").click(function(event){
 	var windowTop = $(window).scrollTop();
 	var pageHeight = $("body").height();
 	var viewportFrac = $(window).height() / 20;
-	var imgPosition	= windowTop + viewportFrac
+	var imgPosition	= windowTop + viewportFrac;
 	var pagewidth = $("body").height();
 	var viewportFrac = $(window).height() / 20;
 	
@@ -51,13 +51,18 @@ $(".gallink").click(function(event){
 	//alert(conditionTest<breakConditionn);
 	
 	$("#maskimg").css({
-		'margin':'4rem auto 0rem auto',
+		//'margin':'4rem auto 0rem auto',
 		'margin-top':imgPosition,
+		'margin-bottomp':'0rem',
+		'margin-right':'auto',
+		'margin-left':'auto',
 		'height':'',
 		'max-height':'',
 		'width':'',
 		'max-width':''
 	  });
+	  
+	  
 	
 	if(conditionTest<breakConditionn){
 	
