@@ -210,7 +210,7 @@ a {
 	background-color:#4e5d76;
 	width:100%;
 	border: solid 1px black;
-	max-width:200px;
+	
 	
 	
 	
@@ -268,7 +268,7 @@ a {
 
 footer{
 	
-	padding: 0.1rem 0rem .1rem 0rem;
+	padding: 0.25rem 0rem 0.25rem 0rem;
 	color: white;
 	/*border-top: solid 1px black;*/
 	/*background-color:#FF91DA;*/
