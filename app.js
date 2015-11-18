@@ -28,27 +28,67 @@ $(".gallink").click(function(event){
 	var pageHeight = $("body").height();
 	var viewportFrac = $(window).height() / 20;
 	var imgPosition	= windowTop + viewportFrac
+	var pagewidth = $("body").height();
+	var viewportFrac = $(window).height() / 20;
 	
+	var viewWidth = $(window).width();
+	var viewHeight = $(window).height();
+	var breakConditionn =viewHeight*0.80;
+	var conditionTest =viewWidth * 0.8*1.2; 
+
 	
 	var position = $(window).scrollTop();
 	
 	$("#mask").css({
-		
 		'height':$("body").height()
-		
-	
-		
 	});
+	
+	
+	//alert(viewWidth);
+	//alert(viewHeight);
+	//alert(breakConditionn);
+	//alert(conditionTest);
+	//alert(conditionTest<breakConditionn);
+	
 	$("#maskimg").css({
 		'margin':'4rem auto 0rem auto',
 		'margin-top':imgPosition,
-		'width':'90%',
-		'max-width':'650px',
-		'max-height':'90%'
+		'height':'',
+		'max-height':'',
+		'width':'',
+		'max-width':''
+	  });
+	
+	if(conditionTest<breakConditionn){
+	
+		$("#maskimg").css({
+
+		'width':'80%',
+		'max-width':'650px'
 		
 		
-	});
+		});
+		//alert("width");
+	}
+	else {
+		var percenHeight = viewHeight * 0.8;
+		
+		
+		$("#maskimg").css({
+
+		'height':percenHeight,
+		'max-height':'780px'
+		
+		
+		
+		});
+		//alert("height");
+		
+		
+	}
+	
 $mask.show();
+
 	
 	
 });
