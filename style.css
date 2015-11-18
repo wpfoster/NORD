@@ -243,7 +243,7 @@ a {
 	
 }
 	
-}
+
 
 #maskimg{
 
@@ -253,7 +253,9 @@ a {
 }
 
 #context{
+	
 	text-align:center;
+}
 	
 
 .contactlist{
@@ -275,9 +277,9 @@ a {
 
 
 
-.footer{
+footer {
 	
-	padding: 0.1rem 0rem .1rem 0rem;
+	padding: 0.25rem 0rem 0.25rem 0rem;
 	color: white;
 	/*border-top: solid 1px black;*/
 	/*background-color:#FF91DA;*/
