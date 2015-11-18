@@ -22,20 +22,26 @@ $(".gallink").click(function(event){
 	
 	var captionText = $(this).children("p").text();
 	$caption.text(captionText);
-	alert($(window).scrollTop());
+	// alert($("body").height());
+	
+	var windowTop = $(window).scrollTop();
+	var pageHeight = $("body").height();
+	var viewportFrac = $(window).height() / 20;
+	var imgPosition	= windowTop + viewportFrac
 	
 	
-	var position = $(window).scrollTop()
+	var position = $(window).scrollTop();
 	
 	$("#mask").css({
-		'top':position,
-		'height':'100%'
 		
+		'height':$("body").height()
 		
+	
 		
 	});
 	$("#maskimg").css({
 		'margin':'4rem auto 0rem auto',
+		'margin-top':imgPosition,
 		'width':'90%',
 		'max-width':'650px',
 		'max-height':'90%'
