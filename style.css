@@ -116,13 +116,23 @@ a {
 	display:inline-block;
 	margin-left:1rem;
 	margin-right:1rem;
+	padding-left:1rem;
+	padding-right:1rem;
+	background-color:#1c1d21;
 }
 .menuitem a {
-	font-size:2rem;
+	font-size:1.5rem;
+
 }
 
 .currentpage {
-	
+	font-weight:bold;
+	background-color:#3e3b36;
+	border-radius:1rem;
+}
+.currentpage a{
+	font-weight:bold;
+	background-color:#3e3b36;
 }
 
 .logocontainer {
@@ -133,6 +143,7 @@ a {
 	width:100%;
 	max-width:1000px;
 	background-color:#ea9bca;
+	margin-top:0.5rem;
 		
 }
 
@@ -303,8 +314,7 @@ footer{
 			max-width:98%;
 	}
 
-	html{
-	font-size:100%;
+
 	
 }
 }
