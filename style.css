@@ -46,7 +46,11 @@ body{
 	
 body>div {
 	width: 98%;
+	
+	
+	/*
 	max-width:550px;
+	*/
 }
 	
 div{
@@ -108,10 +112,13 @@ a {
 }
 
 .menuitem {
-	max-width:6rem;
+	font-size:2rem;
 	display:inline-block;
 	margin-left:1rem;
 	margin-right:1rem;
+}
+.menuitem a {
+	font-size:2rem;
 }
 
 .currentpage {
@@ -279,4 +286,28 @@ footer{
 	bottom:0;
 	width:100%;
 }
+	
+	
+	
+@media (orientation:landscape){
+	
+	body>div {
+		max-width:50%;
+	}
+	
+}
+
+@media (orientation:portrait){
+
+	body>div {
+			max-width:98%;
+	}
+
+	html{
+	font-size:100%;
+	
+}
+}
+
+
 	
